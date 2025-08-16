@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  padding: 12px 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav.scrolled {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  padding: 8px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Gradient circle glow */
+nav ul li a:hover {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(79, 172, 254, 0.7);
+}
+
+/* Active section highlight */
+nav ul li a.active {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  box-shadow: 0 0 15px rgba(46, 125, 240, 0.7);
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+}
+
+#home {
+  background: #f0f9ff;
+}
+#about {
+  background: #e6ffed;
+}
+#services {
+  background: #fff5f5;
+}
+#contact {
+  background: #fffbe6;
+}
